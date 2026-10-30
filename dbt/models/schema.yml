@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_daily
+    description: "One row per date: model-ready biometric features with baselines."
+    columns:
+      - name: date_day
+        tests: [unique, not_null]
+
+  - name: mart_recovery
+    description: "Daily 0-100 recovery label, wearable-methodology style."
+    columns:
+      - name: date_day
+        tests: [unique, not_null]

@@ -1,0 +1,6 @@
+recovery:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/hatch/workspace/recovery-prediction-engine/warehouse.duckdb
