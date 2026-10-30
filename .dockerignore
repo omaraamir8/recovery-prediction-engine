@@ -1,0 +1,26 @@
+# Serving image needs only: pyproject.toml, uv.lock, src/.
+# Everything else is mounted at runtime (models/, warehouse.duckdb)
+# or is local-only state that must never enter the image.
+.venv/
+__pycache__/
+*.pyc
+.git/
+bronze/
+silver/
+gold/
+*.duckdb
+*.duckdb.wal
+mlruns/
+mlflow.db
+models/
+dbt/
+notebooks/
+dashboards/
+orchestration/
+infra/
+tests/
+.env
+.DS_Store
+README.md
+Makefile
+uv.lock.bak

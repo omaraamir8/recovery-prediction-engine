@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+dbt/target/
+dbt/logs/
+bronze/
+silver/
+gold/
+*.duckdb
+*.duckdb.wal
+mlruns/
+.env
+.DS_Store
+models/
+mlflow.db
+
+dashboards/recovery.html
